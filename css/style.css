@@ -1,0 +1,36 @@
+@import './colors.css';
+@import './navigation/navigation.css';
+@import './header.css';
+@import './aboutme.css';
+@import './stack.css';
+@import './projects/projects.css';
+@import './contact.css';
+@import './footer.css';
+@import './components.css';
+@import './UI/button.css';
+@import './UI/section.css';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+body.no-scroll {
+	overflow: hidden;
+}

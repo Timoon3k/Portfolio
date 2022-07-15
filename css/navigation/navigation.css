@@ -1,0 +1,55 @@
+@import './hamburger.css';
+@import './links.css';
+
+.nav {
+	align-items: center;
+	background-color: var(--white-color);
+	display: flex;
+	justify-content: space-between;
+	left: 0;
+	padding: 1.25em 1em;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transform: translateY(0);
+	transition: transform 0.4s;
+	z-index: 1;
+}
+
+.nav__wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav__logo {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5rem;
+}
+
+.color {
+	background-color: var(--white-color);
+}
+
+.nav.hide {
+	transform: translateY(-100%);
+}
+
+@media (min-width: 1024px) {
+	.nav {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.nav__wrapper {
+		justify-content: space-between;
+		margin-inline: 2em;
+		max-width: 1600px;
+		width: 100%;
+	}
+
+	.nav__logo {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,138 @@
+.aboutme__box:nth-child(1) {
+	margin-bottom: 4em;
+}
+
+.aboutme__box-title {
+	color: var(--white-color);
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+.aboutme__box-text {
+	color: var(--light-gray);
+	font-size: 1.3rem;
+}
+
+.aboutme__box-img {
+	border-radius: 50%;
+	width: 100%;
+	transition: transform 0.2s ease-in;
+}
+
+.aboutme__box-img:hover {
+	transform: scale(0.95);
+}
+
+.aboutme__box-social {
+	align-items: center;
+	display: flex;
+	height: 5em;
+	justify-content: space-evenly;
+	margin-top: 2em;
+}
+
+.aboutme__box-link {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.aboutme__box-icon {
+	border: 0.5em solid transparent;
+	border-radius: 50%;
+	width: 4em;
+	transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.aboutme__box-icon:hover {
+	background-color: var(--light-purple);
+	border: 0.5em solid var(--light-purple);
+}
+
+.aboutme__box-icon-square {
+	border-radius: 0.5em;
+	padding: 0 0.5em;
+	transition: background-color 0.3s ease-in-out;
+	width: 4.5em;
+}
+
+.aboutme__box-icon-square:hover {
+	border-radius: 0.5em;
+	background-color: var(--light-purple);
+}
+
+@media (min-width: 768px) {
+	.aboutme__box-title {
+		font-size: 2.5rem;
+		margin-bottom: 1em;
+	}
+
+	.aboutme__box-text {
+		font-size: 1.5rem;
+		letter-spacing: 0.05em;
+	}
+
+	.aboutme__box-social {
+		margin-top: 6em;
+	}
+
+	.aboutme__box-icon {
+		border: 0.5em solid transparent;
+		border-radius: 50%;
+		transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+		width: 5em;
+	}
+
+	.aboutme__box-icon-square {
+		border-radius: 0.5em;
+		padding: 0 0.5em;
+		transition: background-color 0.3s ease-in-out;
+		width: 5em;
+	}
+}
+
+@media (min-width: 1024px) {
+	.aboutme__boxes {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.aboutme__box:nth-child(1) {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 0;
+		margin-right: 3em;
+		max-width: 50%;
+	}
+
+	.aboutme__box:nth-child(2) {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin-left: 3em;
+	}
+
+	.aboutme__box-img {
+		max-width: 100%;
+	}
+
+	.aboutme__box-title {
+		font-size: 3rem;
+	}
+
+	.aboutme__box-text {
+		font-size: 1.6rem;
+		line-height: 1.5em;
+	}
+
+	.aboutme__box-social {
+		margin-top: 10em;
+	}
+
+	.aboutme__box-icon {
+		width: 5em;
+	}
+}
