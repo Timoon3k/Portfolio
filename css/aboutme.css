@@ -24,10 +24,12 @@
 	perspective: 800px;
 	background-size: cover;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
 }
 
 .aboutme__box-img:hover {
-	transform: rotateY(-180deg);
+	transform: rotate(360deg);
+	transition: 0.8s;
 }
 
 .aboutme__box-social {
