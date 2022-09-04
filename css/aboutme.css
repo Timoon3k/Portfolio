@@ -27,9 +27,19 @@
 	cursor: pointer;
 }
 
-.aboutme__box-img:hover {
-	transform: rotate(360deg);
-	transition: 1.2s;
+@keyframes slide-in-top {
+	0% {
+		transform: translateY(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.aboutme__box-img {
+	animation: slide-in-top 3.5s;
 }
 
 .aboutme__box-social {
