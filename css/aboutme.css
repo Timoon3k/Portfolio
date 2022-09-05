@@ -24,12 +24,11 @@
 	perspective: 800px;
 	background-size: cover;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
-	cursor: pointer;
 }
 
 @keyframes slide-in-top {
 	0% {
-		transform: translateY(-500px);
+		transform: translateY(-550px);
 		opacity: 0;
 	}
 	100% {
@@ -39,7 +38,7 @@
 }
 
 .aboutme__box-img {
-	animation: slide-in-top 3.5s;
+	animation: slide-in-top 3.8s;
 }
 
 .aboutme__box-social {

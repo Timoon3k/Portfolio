@@ -37,7 +37,7 @@
 	margin-top: 1em;
 	font-size: 1.3rem;
 	font-weight: 200;
-  letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
 }
 
 .projects__box-text--stack {
@@ -46,8 +46,8 @@
 }
 
 .projects__box-img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 @media (min-width: 768px) {
