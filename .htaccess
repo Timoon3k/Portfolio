@@ -1,5 +1,5 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.tomaszmajewski.netlify.app$
-RewriteRule ^ (.*)$ https://www.tomaszmajewski.netlify.app/$1 [R=301,L]
-RewriteCond %{HTTP_HOST} !^www.tomaszmajewski.netlify.app$
-RewriteRule ^(.*)$ http://www.tomaszmajewski.netlify.app/$1 [R=301,L]
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} !^$ 
+RewriteCond %{HTTP_HOST} !^www.tomaszmajewski.netlify.app [NC] 
+RewriteCond %{HTTPS}s ^on(s)| 
+RewriteRule ^ http%1://www.tomaszmajewski.netlify.app%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
